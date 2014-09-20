@@ -59,7 +59,7 @@ public class LineChartActivity extends DemoBase implements OnSeekBarChangeListen
         mChart.setOnChartValueSelectedListener(this);
 
         // if enabled, the chart will always start at zero on the y-axis
-        mChart.setStartAtZero(false);
+//        mChart.setStartAtZero(false);
 
         // disable the drawing of values into the chart
         mChart.setDrawYValues(false);
@@ -316,6 +316,11 @@ public class LineChartActivity extends DemoBase implements OnSeekBarChangeListen
 
     }
 
+    /**
+     * generate test data
+     * @param count
+     * @param range
+     */
     private void setData(int count, float range) {
 
         ArrayList<String> xVals = new ArrayList<String>();
